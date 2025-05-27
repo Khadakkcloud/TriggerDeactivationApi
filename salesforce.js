@@ -29,6 +29,7 @@ async function deployTriggerToggle(conn, triggerName, enable) {
  console.log('triggerName:', triggerName);
  console.log('enable:', enable);
  console.log('conn:', conn);
+  console.log('metadata:', metadata);
   try {
     const result = await conn.metadata.update('ApexTrigger', metadata);
     return result;
